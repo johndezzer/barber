@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10e8c689-cdc5-4963-9809-105c95b7c734" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/styles.scss" afterDir="false" />
     </list>
@@ -32,8 +31,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scss/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="606" column="34" selection-start-line="606" selection-start-column="34" selection-end-line="606" selection-end-column="34" />
+                <state relative-caret-position="492">
+                  <caret line="514" column="18" selection-start-line="514" selection-start-column="18" selection-end-line="514" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -53,6 +52,7 @@
       <find>.features</find>
       <find>.news</find>
       <find>main-footer</find>
+      <find>-2rem</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,7 +131,7 @@
       <updated>1542969754020</updated>
       <workItem from="1542969755268" duration="5915000" />
       <workItem from="1542979964070" duration="460000" />
-      <workItem from="1542980449994" duration="2396000" />
+      <workItem from="1542980449994" duration="3010000" />
     </task>
     <task id="LOCAL-00001" summary="Basic commit">
       <created>1542978826667</created>
@@ -144,7 +144,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8771000" />
+    <option name="totallyTimeSpent" value="9385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="24" width="927" height="1056" extended-state="4" />
@@ -209,8 +209,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="606" column="34" selection-start-line="606" selection-start-column="34" selection-end-line="606" selection-end-column="34" />
+        <state relative-caret-position="492">
+          <caret line="514" column="18" selection-start-line="514" selection-start-column="18" selection-end-line="514" selection-end-column="18" />
         </state>
       </provider>
     </entry>
