@@ -311,7 +311,7 @@ body {
 }
 
 
-.features__item-cont{
+.features__item-cont {
 
   @media (max-width: 76.8rem) {
     margin-left: 3rem;
@@ -335,11 +335,19 @@ body {
     line-height: 4rem;
     text-transform: uppercase;
     margin-bottom: 5rem;
+
+    @media (max-width: 76.8rem) {
+      margin-bottom: 6.5rem;
+    }
   }
 
   &__cont {
     width: 100%;
     display: flex;
+
+    @media (max-width: 76.8rem) {
+      flex-wrap: wrap;
+    }
   }
 
   &__show-all {
@@ -358,6 +366,15 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     padding-right: 4rem;
+
+
+    @media (max-width: 76.8rem) {
+      width: 50%;
+
+      &:nth-of-type(3) {
+        display: none;
+      }
+    }
 
     &-text {
       font-size: 1.8rem;
@@ -521,9 +538,22 @@ body {
 .main-footer .container {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 76.8rem) {
+    flex-wrap: wrap;
+  }
 }
 
 .our-address {
+
+  @media (max-width: 76.8rem) {
+    width: 50%;
+    order: 1;
+  }
+
+  @media (max-width: 76.8rem) {
+    width: 50%;
+  }
 
   &__heading {
     font-size: 1.8rem;
@@ -543,6 +573,12 @@ body {
   justify-content: center;
   align-items: flex-start;
 
+  @media (max-width: 76.8rem) {
+    order: 3;
+    width: 100%;
+    margin-top: 5rem;
+  }
+
   &__heading {
     font-size: 1.8rem;
     line-height: 2.7rem;
@@ -550,6 +586,10 @@ body {
     margin-bottom: .5rem;
     width: 100%;
     text-align: center;
+
+    @media (max-width: 76.8rem) {
+      display: none;
+    }
   }
 
   &__item {
@@ -560,16 +600,33 @@ body {
     &:not(:last-of-type) {
       margin-right: 1rem;
     }
+
+    @media (max-width: 76.8rem) {
+      width: 33%;
+      text-align: center;
+      padding: 3rem 9rem 3rem 9rem;
+
+      &:not(:last-of-type) {
+        margin-right: 0;
+
+      }
+    }
   }
 
   & svg {
     height: 2rem;
     width: 2rem;
+
   }
 }
 
 .copyright {
   text-align: center;
+
+  @media (max-width: 76.8rem) {
+    width: 50%;
+    order: 2;
+  }
 
   &__heading {
     font-size: 1.8rem;
