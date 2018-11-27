@@ -51,8 +51,9 @@ body {
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    padding: 2.6rem 0;
     height: auto;
+    background-image: none;
+    background: #242424;
   }
 }
 
@@ -65,8 +66,25 @@ body {
   margin-bottom: 5rem;
 
   @media (max-width: 768px) {
-    order: 2;
+    margin-bottom: 0;
+  }
+
+  &__trigger {
     display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+      width: 7rem;
+      height: 5rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    order: 2;
+    background-color: #826550;
   }
 
   &__item {
@@ -78,8 +96,20 @@ body {
     line-height: 2.4rem;
     font-weight: bold;
 
+    @media (max-width: 768px) {
+      display: none;
+      text-align: center;
+      width: 100%;
+      padding: 1.3rem 0;
+    }
+
     &--active {
       border-bottom: .3rem solid #826550;
+
+      @media (max-width: 768px) {
+        display: block;
+        border-bottom: none;
+      }
     }
 
     &--login {
@@ -88,6 +118,10 @@ body {
 
       @media (max-width: 1200px) {
         font-size: 0;
+      }
+
+      @media (max-width: 768px) {
+        display: none;
       }
     }
 
@@ -100,6 +134,10 @@ body {
 .main-nav .container {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    position: relative;
+  }
 }
 
 .advantages .container {
@@ -260,6 +298,7 @@ body {
 
     &--mobile {
       display: block;
+      margin: 2.6rem auto;
     }
   }
 }
