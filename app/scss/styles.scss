@@ -67,6 +67,7 @@ body {
 
   @media (max-width: 768px) {
     margin-bottom: 0;
+    position: relative;
   }
 
   &__trigger {
@@ -79,6 +80,13 @@ body {
       position: absolute;
       right: 0;
       top: 0;
+      background-color: #6a4d38;
+      border: none;
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
     }
   }
 
@@ -134,10 +142,6 @@ body {
 .main-nav .container {
   display: flex;
   justify-content: space-between;
-
-  @media (max-width: 768px) {
-    position: relative;
-  }
 }
 
 .advantages .container {
