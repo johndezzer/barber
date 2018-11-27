@@ -1,374 +1,381 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic"
-              rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Barbershop</title>
-    </head>
-    <body>
-        <header class="main-header">
-            <nav class="main-nav">
-                <div class="container">
-                    <a href="#" class="main-nav__item main-nav__item--active">Главная</a>
-                    <a href="#" class="main-nav__item">Наши работы</a>
-                    <a href="#" class="main-nav__item">Записаться</a>
-                    <a href="#" class="main-nav__item">Контакты</a>
-                    <a href="#" class="main-nav__item">HTML ACADEMY</a>
-                    <a href="#" class="main-nav__item main-nav__item--login">
-                        <svg class="main-nav__item-login" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                        <rdf:Description rdf:about=""/>
-                                    </rdf:RDF>
-                                </x:xmpmeta>
-                                <?xpacket end="w"?></metadata>
-                            <defs>
-                                <style>
-                                    .cls-1 {
-                                        opacity: 0.3;
-                                    }
-                                </style>
-                            </defs>
-                            <image id="login" class="cls-1" width="16" height="16"
-                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCxUNLzS8P9keAAAAZElEQVQoz4WR0Q2AIBBDH4QRmEFmcAgHdwQYwTgD+KnXS7z+NX0pFNLCaKcaf2ebM8XXJA1WB2QCKbBFQFPEHyFIccOgAeNtmHilb8Opwxj0vzuY2AMSe6BrYfiSRbwbHf3m9QBZoBEFbe0CDQAAAABJRU5ErkJggg=="/>
-                        </svg>
-                        Вход</a>
-                </div>
-            </nav>
-            <svg class="logo logo--desktop" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" width="370" height="153" viewBox="0 0 370 153">
-                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                    <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                               x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                            <rdf:Description rdf:about=""/>
-                        </rdf:RDF>
-                    </x:xmpmeta>
-                    <?xpacket end="w"?></metadata>
-                <image id="logotype-desktop.svg" width="370" height="153"
-                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAACZCAMAAAAFDkHOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEUAAAD///////////////////////////////////////////////////////////9jZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGbg4ODLy8y+vr/z8/Pp6enY2NmKi4zFxcb///9jZGbY2NmxsrPs7OyAgYP19fVtbnDi4uLOz8+UlJaenp93d3mnqKkAAAAR4PK/AAAAJ3RSTlMAIJ/vgBBgzzBAr3Dfv1CPQIBgIJ8wj1C/rxDvz99wn7+/z99AQIAmB8kKAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+ILFQ4uNKdiVgYAAA9sSURBVHja7Z1pg6u2FYbZQYDAnn1vmzSBe5O0adP//9uq7WhDArzP+Or9MGObg5AeiSPpSMZRdAnFyTAMaZZf5OI/pIp0YCpXM68QQntUUExOiy9d2s8gRHHXJfnT7HBGufuF8pbcS+FWIiBIG09RFBHmeOUpmCBHu18pI6dlly7uZ1Aimne2GnlBzkh2v1BM6ra9dGk/g6pBoK59yKu2Mt6z28LjksuZVkzrtrt0cT+DqJOgSCn63mORGsxn/AM5VPguhIb1nuuq1QknkdPu09l0K6txxuR96+kE2xmPU4q6/dEFgwhUGk1XHwHS1qkTprdFZo4RK0A52K28k71swe6iXO91czJmtPIT7zP2/FqiTqLOegpctk9UUxcgi05bda3OQHwMr5xNV7N5FHtdWl6eGGP+no+LsFYnbP41pPA2wxj3rde7fX31fAgei0mQUXYxL1K2BocWThCDj0S8Zcw7c0JF7yExmqSpltySH6/g0vx4JTNypd4nEe45keWUoHr4pNCM1buG4e1aQMMOYugZu8G4JWpZM7GoV8mYEU+oP+PmWCG/yqE7aXIpRU6dRJ13rLiiHVNoZGJEyOIMyU+kv6D+geLPBHJaA2VM6wnDUat6egmfXrOFTrrkdiTxVF6kROy2uMaBZAxNFEYphWx8rDuteGXwuTnxPXUhgwGJaIX0v2BMRy8J7wnI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"/>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Barbershop</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="container">
+          <a href="#" class="main-nav__item main-nav__item--active">Главная</a>
+          <a href="#" class="main-nav__item">Наши работы</a>
+          <a href="#" class="main-nav__item">Записаться</a>
+          <a href="#" class="main-nav__item">Контакты</a>
+          <a href="#" class="main-nav__item">HTML ACADEMY</a>
+          <a href="#" class="main-nav__item main-nav__item--login">
+            <svg class="main-nav__item-login" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                    <rdf:Description rdf:about=""/>
+                  </rdf:RDF>
+                </x:xmpmeta>
+                <?xpacket end="w"?></metadata>
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.3;
+                  }
+                </style>
+              </defs>
+              <image id="login" class="cls-1" width="16" height="16"
+                     xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCxUNLzS8P9keAAAAZElEQVQoz4WR0Q2AIBBDH4QRmEFmcAgHdwQYwTgD+KnXS7z+NX0pFNLCaKcaf2ebM8XXJA1WB2QCKbBFQFPEHyFIccOgAeNtmHilb8Opwxj0vzuY2AMSe6BrYfiSRbwbHf3m9QBZoBEFbe0CDQAAAABJRU5ErkJggg=="/>
             </svg>
-            <svg class="logo logo--tablet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                 width="370" height="101" viewBox="0 0 370 101">
-                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                    <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                               x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                            <rdf:Description rdf:about=""/>
-                        </rdf:RDF>
-                    </x:xmpmeta>
-                    <?xpacket end="w"?></metadata>
-                <image id="logotype-tablet.svg" width="370" height="101"
-                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAABlCAMAAABnXpisAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAmVBMVEUAAAD///////////////////////////////////////////////////////////9jZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGbz8/Pp6em+vr/g4OCxsrOenp////9jZGbY2NmxsrP19fWAgYNtbnDFxcaKi4x3d3mUlJbOz8+enp8AAADzfJ3LAAAAJXRSTlMAIIBwEI/vYM9Ar78wUJ/fIEAwEJ+PgFC/r+/P32Bwz9+/70CAl4cGlgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCxUOKjdaB8K4AAANEklEQVR42u2dCXfiOBKAfd/YQBJCIGR6Z9fu6enZY/7/n1sdJakkS7ZJgBC3671uwC6XpE/lcumAeN6niB8EQeh/Ttm/pERxSyVJP7siv4xEWQuST72iKMsiOr+koCzL6rObew9SENhFtUrI/xOvCMgVwfkF5eSy8rNbew+yajnrejIPn1zRvMPJ6d20ODkJEg2J4pRf7EQeGp/pbbGyq64GkKbksvizm3sPQoMEZUrRFw6NWvs8EB8q3ntWiZJ24OwvJD4B0dA3sct1I3JCy2Uad3woBp4HMfTtLy8FJCqh03WpU2PnDAbig9k7nsr16QMg++zW3oPk7NlZpWWL7vpVXRa5poK8k8aHliSJgeyGNC7LmLM1s56oKYUhWkJOLNeyF/K6RGZyMhpbhQU6PzOpIDLIlJy4ILS1KtlH5ch6IKmFPrDNGz6OYhqxkT0W0u1px2XMcsNPRWAo48yjRtidabxPE96wUAJvRECoEjgiKVOlRPhezpQZO2Yh1XqARg8UWlKp5jWqb7nf085OykR0UaDOz3IQXIEz0iDRBIXyUv44bYuAAKlzXx2RYZjCrrk752CpDfICHgQlNsV7r0ZEy5W8Y2Lu4ClYZn3V1kEy02csvYlr0W6SpfgokkMoqJQ7lm1SS99L4Skbg/tm3ELAj5KXWIUcPpHArmMPAMIyEoElh9EUtSeKpV1VznS0FIJPVjJLKYQ75kAsleQIxjwSIZqho87fcO8MIeg3op9i2gmQ+fBgHcm3KX9NeT/yHi25dg7EVY1mJg3HhlyK3tcJnBJIuU5OYafidg+gawKOToxuQua75ObJ2CEOjVxUIp8W907poR7NoS/FVEDZTp9b+0riQ/xcobwE0vMQEATIrUs1J8Ai7gqeAR4PLymP9jm1QR6y0o9JII9jFOJTRJR1FfQsdBkrbtVOn1r7UpJz0hKkB4xzjjLCY/OMfpYdwJ6OHo8POXda0nlVxgzSCKT8mLl8ya9LUbSqRWmoZ0VxrEazTMtz1V6ZHHDkwkWlq9Y0wso5ARYfWjXJQnugCSCHSZlVGRkyCjHRwo8k6sND1NdvlvfOCX8B4V6uD8Ap5EqgrMSpgKEQE4cwWslZ5PVRUt+sWBypkR/XLDZz/jX0rSAaQZoTQv+kUJzP77GomF9iXrEWFtqTijqidNEMXrnjio5gpOKszVKOjvpmktJhuseIkyxb+nHN+orPztSGT7MDJb+exptQ5KPQtSV/kM9LSNt9kQ1yYd4pXLSG15S/QDbBiCdRCsP7tMGzApy49ONQBoqE54eIKD8AKXjLZ3dYObxraTHz83La6EJ7UrGQkcPjNIXxfSrB01c+ronRHIsaLLExZKQlMiy60BSdERXRqhTEa+gCMa3iQ9f61TyJw2NQPakiyqWAHDlo5SvjVrDoQFAk3EvBzYt0BV7r+QVMTqXsMUjnq4qaBGU1gUOJQk5UiqJhLqfI2EC/ZrsM6IB/pvsMYuF6THweMnIWXDiSOs1E1CAHklVMYwmbkKlbMfnHhk9hnhYywLC4QiMO/ZeoiaxAnFxRpCtqkdmh400W4ZHDN3Mc7nsQJZqAta6KE976SKQf3P0SWCKCKb4y4h0liXvyc5tBfKnAQs7GNLzvWpHhw5RjVsnJR0aXRfhcRphgnjO3nifu77bJJAg6o0v7IWKvqu0RhVKuJONGZc7sEZoUavlOWIBTWeCHZVmuVA/xKWI2X8hLgHSIzTC2ZThb4FRCMS2Ofavy9Vcukcwl/TzX7/soNyCpK/1+hJDKUZ6DTbnPws9njZtLWvBo+5m+teyzuLUs+yxuLnE7zzWg+5Vln8XNZa4LEvcrs12QuF8hKeevkBkussgiiyyyyCKLLLLIIossssgiiyyyyCKLLLLIXKTKDbHsKfMHFfxxC5GuMHy2r+DZDFf4mKNkvXG+46xWCWxCtOzCSx9la0ppVC2KTQW9ZUHPQmY03dQwtgrmPQONAV0UbKt45FKQu8ikGL9tJE6zD2KjHd4jIOp94SXVPnLzB2mKnoK+W6SP3FCI++c15n3k5tc1h5CvXApR1rOq7wDQkBeWgm+HXP+KjQ2I9pMqwYiCbzlfjJWg++sQ8tqlEFrMpjYLuIjG1rIbINdqbiPanKOQWs63Y8g1hUHkyZiCs6sxcrG7V9tgd0/I23MURg18DDkDMhW5VYG+F1/n0ALagpzVa73ZGhWPdYVtT2EKctg6zO7Ohw2YwMg3m4drI3/cjhB7GlMQFlznd5sR5LtnC/Jdtzcq3ugK+56C0bKXB6PpnhFXnrruqYe86zbehUSUyxLQDDXt8KATwwoMyGGtK4QOBdf5526rI2cKtVLYyFYOIofvhLqQZ6ziGPmxj1yLK69d1/fyKyDHH3jTHnWipvazqZAbCsKC6/xGsMmxQoAVXichDwaRl30Lp17TcVzZdqLcmyM/DiPfdIcx5IcR5N0Y8u5hCvLsXOR7s+n2uHJ75N0YckOhj7z7MPLNFOSt/1HkMa6BjCs3QL7pvg8jlwou5JqCDbnVAEbe/fEO5OEY8l03jBy+4shSfBJX4PZdkLuRFx9EDt935APZt048pBbkbuRtNAl5Fqe+FXkMb9h0zbHrRHK6IHcjT5GCHfn3QE7B9pHjuLJWceX9yOPBb1XPAnmNFOzIO9XingVXXJmIvOp98bE2pkrniDxBCqPIH00LMbyacWUacv5zPTrxdpC5KLcsy9++//gI8gxZuDHyFimYyBPSsm/fv5P/w2j9/ESQmhagw3pxZRJy9IuZiPggc1vN63ch1+R+kOOb4c+OiV2hF1emIIdfJUHMRZBzM7fUPPFnirz98bPrjk+ntVWhF1cmIJe/6SuZqx/1cTK3VIwtCs0SefsPPAVrKNCMhsQVFPVHkVfq5yIEc7T65/hzD9aKVR9Gjp8Gn4W8dig4ms5C+anrXs5AvlKXi2VVteLq/MEjVyx//RDy9A6Qjy6pWgLLSyemGSchV4uMmVxgF8zdPzHlqPlbbwbzHOTsLvts5LZFV7au5Gg6qfRDJycvpyGXP3+EtjSg36AeRl5SSWTFDp1lvnwsScxU5e8BuZcXpRCkcDwZTVdJoh5XJiWJqUncwz8VeDps+5c4Jm83nbnoM4o8l9NDfFPG402Qa+QN5EiQwqNombhU7L6oKHIUV6YNhVJJ/OH4KJgL4iTL7zN3zZe/PBnlTkCuLbSvD7dBjnc2TUK+EysQoulio01MAwteVJ424E8lcZzTA3Gcc44h34kizkEOkYWuZ21JBY63QI4jdh+5n4ZjFlpU7Zd3IAehxMVKGiJ+6msi5OvdN1yxl/ORF+q0Ku7KyPFmMB15HhYkTH/bURlEriLLm+aU5yDnxHGHuYgPTGsZS5tTkKO3+862HH0F5HjwYRsK/c7G+IPIxTMoJkMhHBrOQN4n/uwiftmZRDE0SOnD07q2cgXk8TDycvOy3+8HkYsJcxJZjgfE5gzkPeKsE6zEL4v8n/A2oIm9+fy9FnI05PnocrMRWc5AfjKJU+Z24heeL1ctk7tUro7cUxMd70WuslstspwTy0/HyRvoLosczid0IGddJ78GcpUmupCvT8PIRWTJ9MjyJdY+/4L3ER2/PvTOXwe5ShPfu6lCToH5WmS5MnIsVuSauJD/od7vzcTeaSB3K0xCHsmLJm0DtSEXz/1QiyxfAvm/ZdW9p253I+QqTXw38g0sIJLI8voq2XwJ5P+B9zFNWR4nGvgwclnC+5GLiOgTV5GzIveEPHEhRzFTpiy27+xcFvm/Po78v/A+9LYyu70lcm252fZVn8KJHKcscL6yGMjGkDfnIN/9QAoSeWwxG7qQd6piKrLcDrm+3Oz1v8vHVursyLWUZe0sYjWGfHUW8r+QgkTuJz2r7MuRduT/kxVXkeVmyPnfjVDIK5M5/zMmz1bktpSl/wVMZmAIeeCdhfxvG3K8GMyFf8XXjvxvWbWtfdx8OeRxqUsNP7OPNzilWKkIfV0hhRMVrfmfv/EPK5SymAYCbkD2WWVUQSgo5HAixsBidOzn7+oDmryNwtrSshfDQsmK+gkfAhRZUMsuidwlR7y7wCZ7i8IGV+zNmLA35XGshCdbM3eWFQjtmH2JAsnBorDBdXnsLKtn10d+whvFHAojyDfDbd92I8i3h87S9g8jf+rGkD93b/3Lro6cRA1t4ZUkILrCW08Baq4q9qAjXeuqp4PcQ2CX54O1189Fbk7vEeIq4OGKo0+HY0/h8shPe00OdHpd9zCLwqZn4QgHublOpCxMHjUDr71lwe2+r/DWr8KrTvQJHTtB1XTkr5pZavXw0LMgwqgwgSsuGnNh5LvOlIMx2cuWPQYUhAWOHH8QBvZmEbqzbXpVUGMSLp22iRO6AR17timw+KRX3PAlOOxhE7ivtZZdTjY7Q97WPZ3ToIKwwA6v4YNey2e9CMPA2qzCzgzkcPhkqdTJqUD6+k2vuBFqRLOcZWzs9bXL/wH+wkB7kHYZ2QAAAABJRU5ErkJggg=="/>
-            </svg>
-            <svg class="logo logo--mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                 width="226" height="30" viewBox="0 0 226 30">
-                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                    <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                               x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                            <rdf:Description rdf:about=""/>
-                        </rdf:RDF>
-                    </x:xmpmeta>
-                    <?xpacket end="w"?></metadata>
-                <image id="logotype-mobile.svg" width="226" height="30"
-                       xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOIAAAAeCAMAAAAGnjKHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAqFBMVEUAAAD///////////////////////////////////////////////////9jZGZjZGZjZGb///9jZGZjZGb///9jZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGbz8/Pg4OC8vb2hoqOhoqNvcHJjZGa2t7iKi4zY2NmkpabLy8zQ0dH///9jZGbY2NmxsrOKi4x3d3ni4uKnqKn19fXFxcbOz8+enp8AAABhdQ6aAAAAK3RSTlMAgN8w72BwQL8QIJ+PrxCAQFBgIM+/MJ9QcI+v38/Pn3Cf78/v70C/v7+fafMkWgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCxUOMDUEJFlPAAAEQUlEQVRYw9WYe8OaNhTGA4IB8QUEIuJlbTe2tSVt33Xdvv9HG7mcXExQqO52/hA95HmSHx7JQYR8EQwqwhUkVxHkohhyetywhlwcOVqsh2ltwj6aE8Z2btIoQCjlWXMRaGEYiMoojYzkxkUcsLwSHq2BOESgdRAzO7cxRVeIMTtun4U4rNxlAo6FGCzUOoiRnYs9IkB8McyfgIhR7llm7kHMF2klTlEq0Q5yVeUa1QYi1GldVBqRGy1DbJIkEu5kD+5hkoQi1x4AMUqSRszcdUu0EocWCmcLOUIgp0XaKFB1eqSdRuRGyxCxXMXofjJqRJ4rzoCYqHMlzRdoXcTQRTREF22UyTnOtH4Qsf5BLpNo9/yNnJEaiG8BsVygdRGHlQexNkXSKBK/3D29oAcRi0/uMsvPHsQvLuJ9rQcx8CAWnx3EHXvNoE7/X4iNHzHM1qmJmIl701in+5mI8X8GcQg9iK9iIzUQZZ3WlP+mpxB3qXqbse/cg7jG736bg9hg/PVZiMM1YobffcE4RXVFFGIj67SjxxuI8dCkinBwGH0zTiJC/C2IIqIf6RjI3GDHOr2IOvUjsn1FMvK6vmYMrJX/+4jD7z+JjR0bg6BOvYiiNRKMjXg/jRjORYyfjOjr+lQu0nXqRdyKUbzHSxv9jfoLdVXSOYijx3MRZYEBYm0hjg0q1Km/UDNFyBkZYd5dI2ZBIHqnjra3EEMxbPSonouI4oAFtEkHMOLTbRHt0Q3EkZETHlhDnGaM8AJfu0LUTdh5j25uGpm4rKPHQ4jhNaK1GKOBi/jv59LeRERbRliJBghxQlo5rqoJO91GlA+0hF/X70fcXiHi9Uv0pizdBk5c0u50GxFxQtp6CZdu/fIU6Q8PIe5sRJ77mdKJBm5b0/weoiZkiCbhUsSNOBzJIq2DiBMXMag936K4BaBzdQ+xVYQj4wE9gCin7PoHEdceRPvxRBrxh/7N8XS/UNFUTDZwGX77zYPIccTj4nyti7hyEccG7puLyDf29Z7eRUS3ESGwdye2EMUqcnZDna91EVHoIF6JJOIv7NCg8+GfQ+QFGKO+exDx15mI5R+iUtvnIEZyRvM/v3ET9D1METZl7NFin9aD+N5ENP+tHFIb8auo1P45iDFsU1udy5CN+CqO4pb64mpNRKX1IBIT0Wzg1shGfBWV2h++GxEHKliLcBHNxgpyrCc+8mWyTyMH/cCPnfj972DcBrQb7ae1vD2TK8NiOPlT5GR3g81FnCgY4fHG9pEPbFtYRLAU0Q7Rhtux76nxSbqX/A8xKw5ztTyIPEE8ImqIeL/P3PsJo3lRFTKOukWoj5Dr1dLr8SNzL9nIUoKBtqWq9S2LaS2P8f2ZinFn4hG1Oteyidg5eNiwjGYHoSpIDslC5S57dUXHKHizRNUsRzXulDtS7VeaGiqe7Pd8BHKMiGVUsgKh6gJaRlfxF0n+5DEbpiKHAAAAAElFTkSuQmCC"/>
-            </svg>
-        </header>
-        <main class="main-content">
-            <section class="advantages">
-                <div class="container">
-                    <div class="advantages__row">
-                        <div class="advantages__item advantages__item--white">
-                            <h2 class="advantages__item-heading">Стрижка у нас
-                                это выгодно!</h2>
-                            <p class="advantages__item-text advantages__item-text--tablet advantages__item-text--notice">
-                                * — приведённые данные ложь
-                            </p>
-                        </div>
-                        <div class="advantages__item advantages__item--white advantages__item--bottom">
-                            <p class="advantages__item-text advantages__item-text--black">
-                                Мужская стрижка требует точного подхода. Обратимся к статистике:
-                            </p>
-                            <p class="advantages__item-text advantages__item-text--pc advantages__item-text--notice">
-                                * — приведённые данные ложь
-                            </p>
-                        </div>
-                    </div>
-                    <div class="advantages__row">
-                        <div class="advantages__item advantages__item--gray">
-                            <p class="advantages__item-numbers">1 500 *</p>
-                            <p class="advantages__item-text">рублей вложений</p>
-                        </div>
-                        <div class="advantages__item advantages__item--dark-gray">
-                            <p class="advantages__item-numbers">90 000</p>
-                            <p class="advantages__item-text">постриженных волос</p>
-                        </div>
-                    </div>
-                    <div class="advantages__row">
-                        <div class="advantages__item advantages__item--light-gray">
-                            <p class="advantages__item-numbers">7 200</p>
-                            <p class="advantages__item-text">секунд времени мастера</p>
-                        </div>
-                        <div class="advantages__item advantages__item--gray">
-                            <p class="advantages__item-numbers">500 000*</p>
-                            <p class="advantages__item-text">лайков и комплиментов</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="features">
-                <div class="container">
-                    <div class="features__item">
-                        <svg class="features__item-img" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" width="95" height="94" viewBox="0 0 95 94">
-                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                        <rdf:Description rdf:about=""/>
-                                    </rdf:RDF>
-                                </x:xmpmeta>
-                                <?xpacket end="w"?></metadata>
-                            <image id="advantage-1-illustration.svg" width="95" height="94"
-                                   xlink:href="data:img/png;base64,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"/>
-                        </svg>
-                        <div class="features__item-cont">
-                            <h2 class="features__item-heading">Быстро</h2>
-                            <p class="features__item-text">
-                                Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель
-                                стильной
-                                стрижки-минутки
-                            </p>
-                        </div>
-                    </div>
-                    <div class="features__item">
-                        <svg class="features__item-img" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" width="95" height="88" viewBox="0 0 95 88">
-                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                        <rdf:Description rdf:about=""/>
-                                    </rdf:RDF>
-                                </x:xmpmeta>
-                                <?xpacket end="w"?></metadata>
-                            <image id="advantage-2-illustration.svg" width="95" height="88"
-                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAABYCAMAAACkl9t/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEWCZVD///+CZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVAAAABqYUiJAAAAEXRSTlMAACBQgJ+/32BwzxCvQI8w7xXSZgYAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gsTEA8Hp/7zVQAABJ1JREFUaN6lmWujphAUhSW3Eun//9nzYiu5hbM/zJw5o4eWbbGFUE/glVDGrxCcUbLictPlHR1sQR9yHJwK/F8+3varFfsm/8Ffj+s7DjXJF7Es+0E2pSzq9+dGjvi1uLhfVzN99vEj+k5U/v9SkbuP3YuEqe+OyE++YvezAlfHALNjfAthwjPmbPOlDg11HR4UMdfqftKRYka2+AqkMUSi75BeffKa9K3BJyP0EOs7qUiVLyEnjy9l3jKZTj72SWHWETpC6UKp8U8/jmNEml+odNGpMh/w2xg9Hz4v56fHj2rzE/WqybMU8Oco/pX6LnCJL/kkHqX+vRf9YZ/Fn+nwtxJfz+Jb8jx8vwDVBB6lW9BR8GdpphLTRpY9osB3GXzM4JFI+TLnO3X44KqFoCV51BrzfWpOiZ/L77KH8pjvLFnP4WUxewysYd/ETq6ZUyfzNre41rCHPcOfyh2UblxBnmBC9/D5JD7zTicPu+AFbAuXYGKWzwvyLCKsg9Bievjp6gJr5rALILAn0kezRzfmg5DVmlWysV9w9CHwM4L10ZE8eGNXGrtO5A87l8ta7fimyxlUDi+FDsZw+M5Anq/ZPfvotzwww+cC+fshD+mkX+Y+n0s/2QixT3lkTxnggz7nf/sQ+/Htr9tr921g3GVPuWT6HXVv/mb/vXj7aDpn5L/H9uyfWG1ZYWai+gXArpsW/klwkh9J8XvvpXF95IWxDViLH8a4F7f+t3uuMd/Kqt300gY+7H57OcVUIk/EdxPsJq9lDjC5td1BJfJEfJvUu0ufxuoK9lVrohJ5Ir57c/SRPiBP1V5VIk/EVz18WLm6h08n+Ox580++GuYrBdO7KfXJ9xr28qU4kprt5wyaqCSPotOJHuFvKfyZRfbq5PkPPMCnVzs4DU50bwxgAl18fXXE70VW7P0rWiEp35TWb+9u9Ytg3galfOJ+y/7Jf89uymfouAr+OcHHGd9vjCR6t3/w7x324Xvl17jz3vTJQ2V854wrgr/eIUbxj8I3PwycX7l94VH+mvNtjvPFa5HZ76BA0fM3346bLqBFurdiM8QXOd8fCxdwqMzf1UgHcX7H8vwqVeQLkHx/6j5xXm9/ieVh7vws0iahBzcJr7OFCrZqoAhglCQ36bH5CMd3ApVOoAIyrLDy6ieO6HBiC/k7WQrXhbTQL8sVKfFdglOov85MBx+mAAL++cF3Qz6B7x/KXkCU5h34qM13w2dL4Ks0yVxYZ9/m+K6Vuvn+qUQK16mc4qt7+MA/r1yLvTgpPXy4jYn4hSDlaezh65A8Df5ZnJIuvjPm8AWg0spfx60zfG+NcH1V4Ut3KtjRBN8/el8hwm9VCKu4XPfqIv3ku5XF4+8jWJeLzWJV9sX3G1P8fWetOL3BDT5u4qML0HrtX66I2v7m8c/tfINfqViafI+nSwe/VrI2+D5z3vgl+pgWR3X/AH6hWoVvK2+8vz8U5L7z8lG3d+BrlfXgL1n0kvM7AitiL97iVOOMiFcvwiXFOP8kjaOErZbuDuzXiUG+JPz6DBpN9xh/6zxmMTzDH7gYuz/cjPBHyoxgJwn/D45sxmApw8scAAAAAElFTkSuQmCC"/>
-                        </svg>
-                        <div class="features__item-cont">
-                            <h2 class="features__item-heading">Круто</h2>
-                            <p class="features__item-text">
-                                Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино.
-                                Во всяком случае внешне.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="features__item">
-                        <svg class="features__item-img" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" width="95" height="91" viewBox="0 0 95 91">
-                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                        <rdf:Description rdf:about=""/>
-                                    </rdf:RDF>
-                                </x:xmpmeta>
-                                <?xpacket end="w"?></metadata>
-                            <image id="advantage-3-illustration.svg" width="95" height="91"
-                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAABbCAMAAAAiA6nRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEWCZVD///+CZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVAAAABqYUiJAAAAEXRSTlMAACBQgJ+/32CvcM9AMBCP76sTLi0AAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gsTEBIOIU4n7QAABDRJREFUaN7t2dvSqyoMAGA8ggpI3/9l10+ClkOCaL3ZM5urTqufEANGKkRL64dxmuXnaHKexqGnD+3S1mCr5SvHTS6q/9Xv1+1Ta9va/+APy+e6LcNDX8Vh2ZZRaW3+vjZaq3GJhyXVAz/St1ETB+hxo67Q5uvz3FlZtg9WzWcf9A3f7uEsN/ai3vrRhWN32+preYw67bqZ/A9yMtkgjsN1m78ffU91+02mJfvlGMPe4NsQ0ikLu4mzSZrspCncLHvlB0bmGWPTebblNz3EVJq6bxwVgG/QzrYX48bwOVPzA7+WaVJM2zKxVuoCBO+I2bQWftkHoV15AYI35ZmiXIgW4ihTXiCOoCPvHLS58GfqsB6ywFnKxwyR9GrQ6AsrsY+EP7HBueGHEE2lr2q8GAt/FLULqNzv8WvBnVX4XE867Gif+RCASbBtbguPX38g0HPqKz514vGdzfW8j4miYh9T04hKM/EFHH/on2miJI1u3yiqzXxXuK3SE48i9/Wh+9KKi6bwCpuqHeRRmAU4APhuJ3LHttQm52JhEx9zaD987H7Wj/kGH69GeFvPAZzRzwd9i/98Ml8dd8B/JYnu/+jDACT6A9X9X30YwAD+BLF62Yd7OoEPn8TLPqwSzvsaRvK6D1HXHSa/K+fJvfycC7/zYdn/fD8piYepkTf4qN46fT8/tw4DQRQDf4ELRYOO2kTpa1xwnD6c3WH46fVKZ6ENy3jRknrm9A3+tGZEzc95VfM7DMz+YR9GuV/wour7DNkhT6Ymv+Tr/gQ99+kztvgEX/f9srmJ49Arfyf4ug8dEsUBtD9RfN3XN3yaf81n+Ld8jn/JZ/l3fJ5/x09bUro1+kO7n1aGVR+eMFA8jM1+Vnhezl8pcBVq9DPeVH1cOXEVavNz3lV9XDn9KFybz/Cc7yDygPQtPsczfo8/2SylWZ/lGR+WT4v1w3Tt8zzj+xu78fVP5ld4xj/qn4GdwZrlVfK2R/pYFvr688MFSLN8euNJH1YtqG8XLkCnv1V52vcjXCr1f+Rn78VFkUX5Uf0PBfrG+1c86fusdPH7l2b9K57y4dTj/Qtm2sz6VzzlQ3XfBx8fgLrFJwvc0oczYRNInAOQDX5r/SyP7of9BxjAeum31s/r2f14/6TYc3laP8NeTrJ/gik01/3m+nk+kufrwyqaP4dTfy152oe+bl3qm/LI1CerIMrHs0zmY4TSdexR/Ywr99jlPr7wJmvBk/oZN9+O3b1k/1bmF3hQPx+bwIQfRhZd4H79jHy8wV3G+3uB2/Vz+JNDd7QfMvx82afrZxdVq6kfthRUx/nhAsdEvlk/hy3YhM//f8HNY8v7lfrZupIv/z9y4WFv72zQzNCjvfx7p/z/y2z4OvBg/2fwhcCVL+yiv0NvbhBPv8166SehveVD+9//b/g/709e+A/mF+X/Awb961iupEGgAAAAAElFTkSuQmCC"/>
-                        </svg>
-                        <div class="features__item-cont">
-                            <h2 class="features__item-heading">Дорого</h2>
-                            <p class="features__item-text">
-                                Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена
-                                не
-                                даёт
-                                определённый статус?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="news">
-                <div class="container">
-                    <h2 class="news__heading">Новости и акции</h2>
-                    <a class="news__show-all" href="#">Показать все</a>
-                    <div class="news__cont">
-                        <div class="news__item">
-                            <div class="news__item-date">
-                                <div class="news__item-date-number">
-                                    29
-                                </div>
-                                <div class="news__item-date-month">
-                                    сент
-                                </div>
-                            </div>
-                            <div class="news__item-text">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить
-                                стаканчик во время стрижки.
-                            </div>
-                        </div>
-                        <div class="news__item">
-                            <div class="news__item-date">
-                                <div class="news__item-date-number">
-                                    29
-                                </div>
-                                <div class="news__item-date-month">
-                                    сент
-                                </div>
-                            </div>
-                            <div class="news__item-text">В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил
-                                наши стройные ряды. Спешите записаться!
-                            </div>
-                        </div>
-                        <div class="news__item">
-                            <div class="news__item-date">
-                                <div class="news__item-date-number">
-                                    29
-                                </div>
-                                <div class="news__item-date-month">
-                                    сент
-                                </div>
-                            </div>
-                            <div class="news__item-text">Все дорожает, а наши стрижки нет! Как так? Приходите,
-                                постригитесь и узнаете, в чем здесь подвох!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="reviews">
-                <div class="container">
-                    <h2 class="reviews-heading">Отзывы о нас</h2>
-                    <a class="reviews__show-all" href="#">Показать все</a>
-                    <div class="reviews__cont">
-                        <div class="reviews__item">
-                            <img class="reviews__item-img" src="img/review-first__img.jpg">
-                            <div class="reviews__item-cont">
-                                <h2 class="reviews__item-heading">Трэвис Баркер</h2>
-                                <p class="reviews__item-text">Спасибо за лысину! Был проездом в Москве, заскочил
-                                    побриться,
-                                    чтобы было видно новую татуировку!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reviews__slider-buttons">
-                        <div class="reviews__slider-buttons-item reviews__slider-buttons-item--left"></div>
-                        <div class="reviews__slider-buttons-item reviews__slider-buttons-item--right"></div>
-                    </div>
-                </div>
-                <form class="reviews__buttons">
-                    <label class="reviews__buttons-label reviews__buttons-label--active"><input
-                            class="reviews__buttons-item" type="radio" name="slide" value="slide1"
-                            checked></label>
-                    <label class="reviews__buttons-label"><input class="reviews__buttons-item" type="radio" name="slide"
-                                                                 value="slide1"></label>
-                    <label class="reviews__buttons-label"><input class="reviews__buttons-item" type="radio" name="slide"
-                                                                 value="slide1"></label>
-                </form>
-            </section>
-        </main>
-        <footer class="main-footer">
-            <div class="container">
-                <div class="our-address">
-                    <h2 class="our-address__heading">
-                        Барбершоп Бородинский
-                    </h2>
-                    <p class="our-address__text">
-                        г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
-                        Тел.: +7 (812) 555-66-66
-                    </p>
-                </div>
-                <div class="our-socials">
-                    <h2 class="our-socials__heading">Давайте дружить!</h2>
-                    <a class="our-socials__item">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15"
-                             height="17" viewBox="0 0 15 17">
-                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                        <rdf:Description rdf:about=""/>
-                                    </rdf:RDF>
-                                </x:xmpmeta>
-                                <?xpacket end="w"?></metadata>
-                            <image id="vk-icon-small.png" width="15" height="17"
-                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAQAAACoAz4qAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCxQMMizpQSAGAAAAgklEQVQoz32PQRGAMBADFxxgoUiohSIBC1ioFywgASSABJCAhfCgA8PQ672ayV2TRU7/2RWFEGTte8WJGmsckY/dUVHRsiUdyFwfTK+wP4eNT7UghLz2pL3d/LyXbbC5dJ3i/tkoPOlrrvnCmF4+D9aUuAeGh7xYrS/Z0QI7FeWEuABEOg7V3bBV7AAAAABJRU5ErkJggg=="/>
-                        </svg>
-                    </a>
-                    <a class="our-socials__item">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10"
-                             height="21" viewBox="0 0 10 21">
-                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                        <rdf:Description rdf:about=""/>
-                                        v
-                                    </rdf:RDF>
-                                </x:xmpmeta>
-                                <?xpacket end="w"?></metadata>
-                            <image id="facebook-icon-small.png" width="10" height="21"
-                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAVCAQAAADVu7d4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCxQMMxdBUfhjAAAAfklEQVQY09XPsQnCUBSF4U8JzmCVys5GEBzAJRzAJVzIBRzAxjozWAUsEwyC1bV476GELOB/u5/DuffOQmbloLbFINIc4xWFLqllvONLV4G9RWnRGJKss2it9cz9ctczloU4x5jnVLKdlJWrwcYOPFzQpONPue2W/pvc/i/yA4RHUgnQ0JvwAAAAAElFTkSuQmCC"/>
-                        </svg>
-                    </a>
-                    <a class="our-socials__item">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19"
-                             height="19" viewBox="0 0 19 19">
-                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                        <rdf:Description rdf:about=""/>
-                                    </rdf:RDF>
-                                </x:xmpmeta>
-                                <?xpacket end="w"?></metadata>
-                            <image id="insta-icon-small.png" width="19" height="19"
-                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAQAAADYWf5HAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCxQMMydniMjPAAAAr0lEQVQoz5WRURWCQBRELx4D2MAKNmBNYAVpYAOXJG4TiUAETCANrh9yUBQE52vn7Zwzb95k3tkwhybTWRGw/vGXuAE5AXAaQcSoulpi+dt0B8AWYGGEb9OSPeXXVNWr0YuqFxHpWfSq+pRF8fiWDkPPPpI2AISOHaaS1rRsOAMVgRPQUg13i9LbvnAcP2+ioO3eLQVp6ryJ1G1XDeYjLVSM4CnLiZMF5H+V1SxQ1Q87p5wj/a4pZQAAAABJRU5ErkJggg=="/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="copyright">
-                    <h2 class="copyright__heading">Разработано:</h2>
-                    <div class="copyright__company-name">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="106" height="13" viewBox="0 0 106 13">
-                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                        <rdf:Description rdf:about=""/>
-                                    </rdf:RDF>
-                                </x:xmpmeta>
-                                <?xpacket end="w"?></metadata>
-                            <defs>
-                                <style>
-                                    .cls-1 {
-                                        font-size: 18px;
-                                        fill: #fff;
-                                        text-anchor: middle;
-                                        font-family: "PT Sans Narrow";
-                                        font-weight: 700;
-                                    }
-                                </style>
-                            </defs>
-                            <text id="HTML_ACADEMY" data-name="HTML ACADEMY" class="cls-1"
-                                  x="52.898" y="13.465">
-                                <tspan x="52.898">HTML ACADEMY</tspan>
-                            </text>
-                        </svg>
-                    </div>
-                </div>
+            Вход</a>
+        </div>
+      </nav>
+      <svg class="logo logo--desktop" xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink" width="370" height="153" viewBox="0 0 370 153">
+        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+          <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                     x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about=""/>
+            </rdf:RDF>
+          </x:xmpmeta>
+          <?xpacket end="w"?></metadata>
+        <image id="logotype-desktop.svg" width="370" height="153"
+               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAACZCAMAAAAFDkHOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAolBMVEUAAAD///////////////////////////////////////////////////////////9jZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGbg4ODLy8y+vr/z8/Pp6enY2NmKi4zFxcb///9jZGbY2NmxsrPs7OyAgYP19fVtbnDi4uLOz8+UlJaenp93d3mnqKkAAAAR4PK/AAAAJ3RSTlMAIJ/vgBBgzzBAr3Dfv1CPQIBgIJ8wj1C/rxDvz99wn7+/z99AQIAmB8kKAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+ILFQ4uNKdiVgYAAA9sSURBVHja7Z1pg6u2FYbZQYDAnn1vmzSBe5O0adP//9uq7WhDArzP+Or9MGObg5AeiSPpSMZRdAnFyTAMaZZf5OI/pIp0YCpXM68QQntUUExOiy9d2s8gRHHXJfnT7HBGufuF8pbcS+FWIiBIG09RFBHmeOUpmCBHu18pI6dlly7uZ1Aimne2GnlBzkh2v1BM6ra9dGk/g6pBoK59yKu2Mt6z28LjksuZVkzrtrt0cT+DqJOgSCn63mORGsxn/AM5VPguhIb1nuuq1QknkdPu09l0K6txxuR96+kE2xmPU4q6/dEFgwhUGk1XHwHS1qkTprdFZo4RK0A52K28k71swe6iXO91czJmtPIT7zP2/FqiTqLOegpctk9UUxcgi05bda3OQHwMr5xNV7N5FHtdWl6eGGP+no+LsFYnbP41pPA2wxj3rde7fX31fAgei0mQUXYxL1K2BocWThCDj0S8Zcw7c0JF7yExmqSpltySH6/g0vx4JTNypd4nEe45keWUoHr4pNCM1buG4e1aQMMOYugZu8G4JWpZM7GoV8mYEU+oP+PmWCG/yqE7aXIpRU6dRJ13rLiiHVNoZGJEyOIMyU+kv6D+geLPBHJaA2VM6wnDUat6egmfXrOFTrrkdiTxVF6kROy2uMaBZAxNFEYphWx8rDuteGXwuTnxPXUhgwGJaIX0v2BMRy8J7wnI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"/>
+      </svg>
+      <svg class="logo logo--tablet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+           width="370" height="101" viewBox="0 0 370 101">
+        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+          <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                     x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about=""/>
+            </rdf:RDF>
+          </x:xmpmeta>
+          <?xpacket end="w"?></metadata>
+        <image id="logotype-tablet.svg" width="370" height="101"
+               xlink:href="data:img/png;base64,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"/>
+      </svg>
+      <svg class="logo logo--mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+           width="226" height="30" viewBox="0 0 226 30">
+        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+          <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                     x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+              <rdf:Description rdf:about=""/>
+            </rdf:RDF>
+          </x:xmpmeta>
+          <?xpacket end="w"?></metadata>
+        <image id="logotype-mobile.svg" width="226" height="30"
+               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOIAAAAeCAMAAAAGnjKHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAqFBMVEUAAAD///////////////////////////////////////////////////9jZGZjZGZjZGb///9jZGZjZGb///9jZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGZjZGbz8/Pg4OC8vb2hoqOhoqNvcHJjZGa2t7iKi4zY2NmkpabLy8zQ0dH///9jZGbY2NmxsrOKi4x3d3ni4uKnqKn19fXFxcbOz8+enp8AAABhdQ6aAAAAK3RSTlMAgN8w72BwQL8QIJ+PrxCAQFBgIM+/MJ9QcI+v38/Pn3Cf78/v70C/v7+fafMkWgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCxUOMDUEJFlPAAAEQUlEQVRYw9WYe8OaNhTGA4IB8QUEIuJlbTe2tSVt33Xdvv9HG7mcXExQqO52/hA95HmSHx7JQYR8EQwqwhUkVxHkohhyetywhlwcOVqsh2ltwj6aE8Z2btIoQCjlWXMRaGEYiMoojYzkxkUcsLwSHq2BOESgdRAzO7cxRVeIMTtun4U4rNxlAo6FGCzUOoiRnYs9IkB8McyfgIhR7llm7kHMF2klTlEq0Q5yVeUa1QYi1GldVBqRGy1DbJIkEu5kD+5hkoQi1x4AMUqSRszcdUu0EocWCmcLOUIgp0XaKFB1eqSdRuRGyxCxXMXofjJqRJ4rzoCYqHMlzRdoXcTQRTREF22UyTnOtH4Qsf5BLpNo9/yNnJEaiG8BsVygdRGHlQexNkXSKBK/3D29oAcRi0/uMsvPHsQvLuJ9rQcx8CAWnx3EHXvNoE7/X4iNHzHM1qmJmIl701in+5mI8X8GcQg9iK9iIzUQZZ3WlP+mpxB3qXqbse/cg7jG736bg9hg/PVZiMM1YobffcE4RXVFFGIj67SjxxuI8dCkinBwGH0zTiJC/C2IIqIf6RjI3GDHOr2IOvUjsn1FMvK6vmYMrJX/+4jD7z+JjR0bg6BOvYiiNRKMjXg/jRjORYyfjOjr+lQu0nXqRdyKUbzHSxv9jfoLdVXSOYijx3MRZYEBYm0hjg0q1Km/UDNFyBkZYd5dI2ZBIHqnjra3EEMxbPSonouI4oAFtEkHMOLTbRHt0Q3EkZETHlhDnGaM8AJfu0LUTdh5j25uGpm4rKPHQ4jhNaK1GKOBi/jv59LeRERbRliJBghxQlo5rqoJO91GlA+0hF/X70fcXiHi9Uv0pizdBk5c0u50GxFxQtp6CZdu/fIU6Q8PIe5sRJ77mdKJBm5b0/weoiZkiCbhUsSNOBzJIq2DiBMXMag936K4BaBzdQ+xVYQj4wE9gCin7PoHEdceRPvxRBrxh/7N8XS/UNFUTDZwGX77zYPIccTj4nyti7hyEccG7puLyDf29Z7eRUS3ESGwdye2EMUqcnZDna91EVHoIF6JJOIv7NCg8+GfQ+QFGKO+exDx15mI5R+iUtvnIEZyRvM/v3ET9D1METZl7NFin9aD+N5ENP+tHFIb8auo1P45iDFsU1udy5CN+CqO4pb64mpNRKX1IBIT0Wzg1shGfBWV2h++GxEHKliLcBHNxgpyrCc+8mWyTyMH/cCPnfj972DcBrQb7ae1vD2TK8NiOPlT5GR3g81FnCgY4fHG9pEPbFtYRLAU0Q7Rhtux76nxSbqX/A8xKw5ztTyIPEE8ImqIeL/P3PsJo3lRFTKOukWoj5Dr1dLr8SNzL9nIUoKBtqWq9S2LaS2P8f2ZinFn4hG1Oteyidg5eNiwjGYHoSpIDslC5S57dUXHKHizRNUsRzXulDtS7VeaGiqe7Pd8BHKMiGVUsgKh6gJaRlfxF0n+5DEbpiKHAAAAAElFTkSuQmCC"/>
+      </svg>
+    </header>
+    <main class="main-content">
+      <section class="advantages">
+        <div class="container">
+          <div class="advantages__row">
+            <div class="advantages__item advantages__item--white">
+              <h2 class="advantages__item-heading">Стрижка у нас
+                это выгодно!</h2>
+              <p class="advantages__item-text advantages__item-text--tablet advantages__item-text--notice">
+                * — приведённые данные ложь
+              </p>
             </div>
-        </footer>
-    </body>
+            <div class="advantages__item  advantages__item--bottom advantages__item--white">
+              <p class="advantages__item-text advantages__item-text--black">
+                Мужская стрижка требует точного подхода. Обратимся к статистике:
+              </p>
+              <p class="advantages__item-text advantages__item-text--pc advantages__item-text--notice">
+                * — приведённые данные ложь
+              </p>
+            </div>
+          </div>
+          <div class="advantages__row">
+            <div class="advantages__item advantages__item--gray">
+              <p class="advantages__item-numbers">1 500 *</p>
+              <p class="advantages__item-text">рублей вложений</p>
+            </div>
+            <div class="advantages__item advantages__item--dark-gray">
+              <p class="advantages__item-numbers">90 000</p>
+              <p class="advantages__item-text">постриженных волос</p>
+            </div>
+          </div>
+          <div class="advantages__row">
+            <div class="advantages__item advantages__item--light-gray">
+              <p class="advantages__item-numbers">7 200</p>
+              <p class="advantages__item-text">секунд времени мастера</p>
+            </div>
+            <div class="advantages__item advantages__item--gray">
+              <p class="advantages__item-numbers">500 000*</p>
+              <p class="advantages__item-text">лайков и комплиментов</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <div class="features__item">
+            <svg class="features__item-img" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" width="95" height="94" viewBox="0 0 95 94">
+              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                    <rdf:Description rdf:about=""/>
+                  </rdf:RDF>
+                </x:xmpmeta>
+                <?xpacket end="w"?></metadata>
+              <image id="advantage-1-illustration.svg" width="95" height="94"
+                     xlink:href="data:img/png;base64,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"/>
+            </svg>
+            <div class="features__item-cont">
+              <h2 class="features__item-heading">Быстро</h2>
+              <p class="features__item-text">
+                Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель
+                стильной
+                стрижки-минутки
+              </p>
+            </div>
+          </div>
+          <div class="features__item">
+            <svg class="features__item-img" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" width="95" height="88" viewBox="0 0 95 88">
+              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                    <rdf:Description rdf:about=""/>
+                  </rdf:RDF>
+                </x:xmpmeta>
+                <?xpacket end="w"?></metadata>
+              <image id="advantage-2-illustration.svg" width="95" height="88"
+                     xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAABYCAMAAACkl9t/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEWCZVD///+CZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVAAAABqYUiJAAAAEXRSTlMAACBQgJ+/32BwzxCvQI8w7xXSZgYAAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gsTEA8Hp/7zVQAABJ1JREFUaN6lmWujphAUhSW3Eun//9nzYiu5hbM/zJw5o4eWbbGFUE/glVDGrxCcUbLictPlHR1sQR9yHJwK/F8+3varFfsm/8Ffj+s7DjXJF7Es+0E2pSzq9+dGjvi1uLhfVzN99vEj+k5U/v9SkbuP3YuEqe+OyE++YvezAlfHALNjfAthwjPmbPOlDg11HR4UMdfqftKRYka2+AqkMUSi75BeffKa9K3BJyP0EOs7qUiVLyEnjy9l3jKZTj72SWHWETpC6UKp8U8/jmNEml+odNGpMh/w2xg9Hz4v56fHj2rzE/WqybMU8Oco/pX6LnCJL/kkHqX+vRf9YZ/Fn+nwtxJfz+Jb8jx8vwDVBB6lW9BR8GdpphLTRpY9osB3GXzM4JFI+TLnO3X44KqFoCV51BrzfWpOiZ/L77KH8pjvLFnP4WUxewysYd/ETq6ZUyfzNre41rCHPcOfyh2UblxBnmBC9/D5JD7zTicPu+AFbAuXYGKWzwvyLCKsg9Bievjp6gJr5rALILAn0kezRzfmg5DVmlWysV9w9CHwM4L10ZE8eGNXGrtO5A87l8ta7fimyxlUDi+FDsZw+M5Anq/ZPfvotzwww+cC+fshD+mkX+Y+n0s/2QixT3lkTxnggz7nf/sQ+/Htr9tr921g3GVPuWT6HXVv/mb/vXj7aDpn5L/H9uyfWG1ZYWai+gXArpsW/klwkh9J8XvvpXF95IWxDViLH8a4F7f+t3uuMd/Kqt300gY+7H57OcVUIk/EdxPsJq9lDjC5td1BJfJEfJvUu0ufxuoK9lVrohJ5Ir57c/SRPiBP1V5VIk/EVz18WLm6h08n+Ox580++GuYrBdO7KfXJ9xr28qU4kprt5wyaqCSPotOJHuFvKfyZRfbq5PkPPMCnVzs4DU50bwxgAl18fXXE70VW7P0rWiEp35TWb+9u9Ytg3galfOJ+y/7Jf89uymfouAr+OcHHGd9vjCR6t3/w7x324Xvl17jz3vTJQ2V854wrgr/eIUbxj8I3PwycX7l94VH+mvNtjvPFa5HZ76BA0fM3346bLqBFurdiM8QXOd8fCxdwqMzf1UgHcX7H8vwqVeQLkHx/6j5xXm9/ieVh7vws0iahBzcJr7OFCrZqoAhglCQ36bH5CMd3ApVOoAIyrLDy6ieO6HBiC/k7WQrXhbTQL8sVKfFdglOov85MBx+mAAL++cF3Qz6B7x/KXkCU5h34qM13w2dL4Ks0yVxYZ9/m+K6Vuvn+qUQK16mc4qt7+MA/r1yLvTgpPXy4jYn4hSDlaezh65A8Df5ZnJIuvjPm8AWg0spfx60zfG+NcH1V4Ut3KtjRBN8/el8hwm9VCKu4XPfqIv3ku5XF4+8jWJeLzWJV9sX3G1P8fWetOL3BDT5u4qML0HrtX66I2v7m8c/tfINfqViafI+nSwe/VrI2+D5z3vgl+pgWR3X/AH6hWoVvK2+8vz8U5L7z8lG3d+BrlfXgL1n0kvM7AitiL97iVOOMiFcvwiXFOP8kjaOErZbuDuzXiUG+JPz6DBpN9xh/6zxmMTzDH7gYuz/cjPBHyoxgJwn/D45sxmApw8scAAAAAElFTkSuQmCC"/>
+            </svg>
+            <div class="features__item-cont">
+              <h2 class="features__item-heading">Круто</h2>
+              <p class="features__item-text">
+                Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино.
+                Во всяком случае внешне.
+              </p>
+            </div>
+          </div>
+          <div class="features__item">
+            <svg class="features__item-img" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" width="95" height="91" viewBox="0 0 95 91">
+              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                    <rdf:Description rdf:about=""/>
+                  </rdf:RDF>
+                </x:xmpmeta>
+                <?xpacket end="w"?></metadata>
+              <image id="advantage-3-illustration.svg" width="95" height="91"
+                     xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAABbCAMAAAAiA6nRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEWCZVD///+CZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVCCZVAAAABqYUiJAAAAEXRSTlMAACBQgJ+/32CvcM9AMBCP76sTLi0AAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gsTEBIOIU4n7QAABDRJREFUaN7t2dvSqyoMAGA8ggpI3/9l10+ClkOCaL3ZM5urTqufEANGKkRL64dxmuXnaHKexqGnD+3S1mCr5SvHTS6q/9Xv1+1Ta9va/+APy+e6LcNDX8Vh2ZZRaW3+vjZaq3GJhyXVAz/St1ETB+hxo67Q5uvz3FlZtg9WzWcf9A3f7uEsN/ai3vrRhWN32+preYw67bqZ/A9yMtkgjsN1m78ffU91+02mJfvlGMPe4NsQ0ikLu4mzSZrspCncLHvlB0bmGWPTebblNz3EVJq6bxwVgG/QzrYX48bwOVPzA7+WaVJM2zKxVuoCBO+I2bQWftkHoV15AYI35ZmiXIgW4ihTXiCOoCPvHLS58GfqsB6ywFnKxwyR9GrQ6AsrsY+EP7HBueGHEE2lr2q8GAt/FLULqNzv8WvBnVX4XE867Gif+RCASbBtbguPX38g0HPqKz514vGdzfW8j4miYh9T04hKM/EFHH/on2miJI1u3yiqzXxXuK3SE48i9/Wh+9KKi6bwCpuqHeRRmAU4APhuJ3LHttQm52JhEx9zaD987H7Wj/kGH69GeFvPAZzRzwd9i/98Ml8dd8B/JYnu/+jDACT6A9X9X30YwAD+BLF62Yd7OoEPn8TLPqwSzvsaRvK6D1HXHSa/K+fJvfycC7/zYdn/fD8piYepkTf4qN46fT8/tw4DQRQDf4ELRYOO2kTpa1xwnD6c3WH46fVKZ6ENy3jRknrm9A3+tGZEzc95VfM7DMz+YR9GuV/wour7DNkhT6Ymv+Tr/gQ99+kztvgEX/f9srmJ49Arfyf4ug8dEsUBtD9RfN3XN3yaf81n+Ld8jn/JZ/l3fJ5/x09bUro1+kO7n1aGVR+eMFA8jM1+Vnhezl8pcBVq9DPeVH1cOXEVavNz3lV9XDn9KFybz/Cc7yDygPQtPsczfo8/2SylWZ/lGR+WT4v1w3Tt8zzj+xu78fVP5ld4xj/qn4GdwZrlVfK2R/pYFvr688MFSLN8euNJH1YtqG8XLkCnv1V52vcjXCr1f+Rn78VFkUX5Uf0PBfrG+1c86fusdPH7l2b9K57y4dTj/Qtm2sz6VzzlQ3XfBx8fgLrFJwvc0oczYRNInAOQDX5r/SyP7of9BxjAeum31s/r2f14/6TYc3laP8NeTrJ/gik01/3m+nk+kufrwyqaP4dTfy152oe+bl3qm/LI1CerIMrHs0zmY4TSdexR/Ywr99jlPr7wJmvBk/oZN9+O3b1k/1bmF3hQPx+bwIQfRhZd4H79jHy8wV3G+3uB2/Vz+JNDd7QfMvx82afrZxdVq6kfthRUx/nhAsdEvlk/hy3YhM//f8HNY8v7lfrZupIv/z9y4WFv72zQzNCjvfx7p/z/y2z4OvBg/2fwhcCVL+yiv0NvbhBPv8166SehveVD+9//b/g/709e+A/mF+X/Awb961iupEGgAAAAAElFTkSuQmCC"/>
+            </svg>
+            <div class="features__item-cont">
+              <h2 class="features__item-heading">Дорого</h2>
+              <p class="features__item-text">
+                Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена
+                не
+                даёт
+                определённый статус?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="container">
+          <h2 class="news__heading">Новости и акции</h2>
+          <a class="news__show-all" href="#">Показать все</a>
+          <div class="news__cont">
+            <div class="news__item">
+              <div class="news__item-date">
+                <div class="news__item-date-number">
+                  29
+                </div>
+                <div class="news__item-date-month">
+                  сент
+                </div>
+              </div>
+              <div class="news__item-text">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить
+                стаканчик во время стрижки.
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__item-date">
+                <div class="news__item-date-number">
+                  29
+                </div>
+                <div class="news__item-date-month">
+                  сент
+                </div>
+              </div>
+              <div class="news__item-text">В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил
+                наши стройные ряды. Спешите записаться!
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__item-date">
+                <div class="news__item-date-number">
+                  29
+                </div>
+                <div class="news__item-date-month">
+                  сент
+                </div>
+              </div>
+              <div class="news__item-text">Все дорожает, а наши стрижки нет! Как так? Приходите,
+                постригитесь и узнаете, в чем здесь подвох!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews-heading">Отзывы о нас</h2>
+          <a class="reviews__show-all" href="#">Показать все</a>
+          <div class="reviews__cont">
+            <div class="reviews__slider-button">
+              <div class="reviews__slider-button-item reviews__slider-button-item--left">
+                <div class="slider__arrow slider__arrow--left">
+                </div>
+              </div>
+            </div>
+            <div class="reviews__item">
+              <img class="reviews__item-img" src="img/review-first__img.jpg">
+              <div class="reviews__item-cont">
+                <h2 class="reviews__item-heading">Трэвис Баркер</h2>
+                <p class="reviews__item-text">Спасибо за лысину! Был проездом в Москве, заскочил
+                  побриться,
+                  чтобы было видно новую татуировку!
+                </p>
+              </div>
+            </div>
+            <div class="reviews__slider-button">
+              <div class="reviews__slider-button-item reviews__slider-button-item--right">
+                <div class="slider__arrow slider__arrow--right">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="reviews__buttons">
+          <label class="reviews__buttons-label reviews__buttons-label--active"><input
+                  class="reviews__buttons-item" type="radio" name="slide" value="slide1" checked></label>
+          <label class="reviews__buttons-label"><input class="reviews__buttons-item" type="radio" name="slide"
+                                                       value="slide1"></label>
+          <label class="reviews__buttons-label"><input class="reviews__buttons-item" type="radio" name="slide"
+                                                       value="slide1"></label>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="our-address">
+          <h2 class="our-address__heading">
+            Барбершоп Бородинский
+          </h2>
+          <p class="our-address__text">
+            г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+            Тел.: +7 (812) 555-66-66
+          </p>
+        </div>
+        <div class="our-socials">
+          <h2 class="our-socials__heading">Давайте дружить!</h2>
+          <a class="our-socials__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15"
+                 height="17" viewBox="0 0 15 17">
+              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                    <rdf:Description rdf:about=""/>
+                  </rdf:RDF>
+                </x:xmpmeta>
+                <?xpacket end="w"?></metadata>
+              <image id="vk-icon-small.png" width="15" height="17"
+                     xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAQAAACoAz4qAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCxQMMizpQSAGAAAAgklEQVQoz32PQRGAMBADFxxgoUiohSIBC1ioFywgASSABJCAhfCgA8PQ672ayV2TRU7/2RWFEGTte8WJGmsckY/dUVHRsiUdyFwfTK+wP4eNT7UghLz2pL3d/LyXbbC5dJ3i/tkoPOlrrvnCmF4+D9aUuAeGh7xYrS/Z0QI7FeWEuABEOg7V3bBV7AAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+          <a class="our-socials__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10"
+                 height="21" viewBox="0 0 10 21">
+              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                    <rdf:Description rdf:about=""/>
+                    v
+                  </rdf:RDF>
+                </x:xmpmeta>
+                <?xpacket end="w"?></metadata>
+              <image id="facebook-icon-small.png" width="10" height="21"
+                     xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAVCAQAAADVu7d4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCxQMMxdBUfhjAAAAfklEQVQY09XPsQnCUBSF4U8JzmCVys5GEBzAJRzAJVzIBRzAxjozWAUsEwyC1bV476GELOB/u5/DuffOQmbloLbFINIc4xWFLqllvONLV4G9RWnRGJKss2it9cz9ctczloU4x5jnVLKdlJWrwcYOPFzQpONPue2W/pvc/i/yA4RHUgnQ0JvwAAAAAElFTkSuQmCC"/>
+            </svg>
+          </a>
+          <a class="our-socials__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19"
+                 height="19" viewBox="0 0 19 19">
+              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                    <rdf:Description rdf:about=""/>
+                  </rdf:RDF>
+                </x:xmpmeta>
+                <?xpacket end="w"?></metadata>
+              <image id="insta-icon-small.png" width="19" height="19"
+                     xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAQAAADYWf5HAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCxQMMydniMjPAAAAr0lEQVQoz5WRURWCQBRELx4D2MAKNmBNYAVpYAOXJG4TiUAETCANrh9yUBQE52vn7Zwzb95k3tkwhybTWRGw/vGXuAE5AXAaQcSoulpi+dt0B8AWYGGEb9OSPeXXVNWr0YuqFxHpWfSq+pRF8fiWDkPPPpI2AISOHaaS1rRsOAMVgRPQUg13i9LbvnAcP2+ioO3eLQVp6ryJ1G1XDeYjLVSM4CnLiZMF5H+V1SxQ1Q87p5wj/a4pZQAAAABJRU5ErkJggg=="/>
+            </svg>
+          </a>
+        </div>
+        <div class="copyright">
+          <h2 class="copyright__heading">Разработано:</h2>
+          <div class="copyright__company-name">
+            <svg xmlns="http://www.w3.org/2000/svg" width="106" height="13" viewBox="0 0 106 13">
+              <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                           x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+                  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                    <rdf:Description rdf:about=""/>
+                  </rdf:RDF>
+                </x:xmpmeta>
+                <?xpacket end="w"?></metadata>
+              <defs>
+                <style>
+                  .cls-1 {
+                    font-size: 18px;
+                    fill: #fff;
+                    text-anchor: middle;
+                    font-family: "PT Sans Narrow";
+                    font-weight: 700;
+                  }
+                </style>
+              </defs>
+              <text id="HTML_ACADEMY" data-name="HTML ACADEMY" class="cls-1"
+                    x="52.898" y="13.465">
+                <tspan x="52.898">HTML ACADEMY</tspan>
+              </text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
 
 
