@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10e8c689-cdc5-4963-9809-105c95b7c734" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +18,7 @@
             <entry file="file://$PROJECT_DIR$/app/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="240">
-                  <caret line="22" column="106" lean-forward="true" selection-start-line="22" selection-start-column="106" selection-end-line="22" selection-end-column="106" />
+                  <caret line="22" column="106" selection-start-line="22" selection-start-column="106" selection-end-line="22" selection-end-column="106" />
                 </state>
               </provider>
             </entry>
@@ -31,8 +30,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scss/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="492">
-                  <caret line="514" column="18" selection-start-line="514" selection-start-column="18" selection-end-line="514" selection-end-column="18" />
+                <state relative-caret-position="42">
+                  <caret line="420" column="8" selection-start-line="420" selection-end-line="420" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -69,9 +68,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="51" />
+    <option name="x" value="53" />
     <option name="y" value="24" />
-    <option name="width" value="927" />
+    <option name="width" value="947" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -81,20 +80,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Barbershop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Barbershop" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -131,7 +117,9 @@
       <updated>1542969754020</updated>
       <workItem from="1542969755268" duration="5915000" />
       <workItem from="1542979964070" duration="460000" />
-      <workItem from="1542980449994" duration="3010000" />
+      <workItem from="1542980449994" duration="3070000" />
+      <workItem from="1543224447241" duration="20000" />
+      <workItem from="1543224482228" duration="232000" />
     </task>
     <task id="LOCAL-00001" summary="Basic commit">
       <created>1542978826667</created>
@@ -144,10 +132,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9385000" />
+    <option name="totallyTimeSpent" value="9697000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="24" width="927" height="1056" extended-state="4" />
+    <frame x="53" y="24" width="947" height="1056" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.11062191" />
@@ -203,14 +191,14 @@
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="22" column="106" lean-forward="true" selection-start-line="22" selection-start-column="106" selection-end-line="22" selection-end-column="106" />
+          <caret line="22" column="106" selection-start-line="22" selection-start-column="106" selection-end-line="22" selection-end-column="106" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="514" column="18" selection-start-line="514" selection-start-column="18" selection-end-line="514" selection-end-column="18" />
+        <state relative-caret-position="42">
+          <caret line="420" column="8" selection-start-line="420" selection-end-line="420" selection-end-column="8" />
         </state>
       </provider>
     </entry>
