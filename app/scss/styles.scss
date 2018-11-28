@@ -48,7 +48,7 @@ body {
     height: 46.9rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -65,7 +65,7 @@ body {
   background-color: #000;
   margin-bottom: 5rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     margin-bottom: 0;
     position: relative;
   }
@@ -73,7 +73,7 @@ body {
   &__trigger {
     display: none;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       display: block;
       width: 7rem;
       height: 5rem;
@@ -82,6 +82,7 @@ body {
       top: 0;
       background-color: #6a4d38;
       border: none;
+      cursor: pointer;
 
       &:active,
       &:focus {
@@ -90,7 +91,7 @@ body {
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     order: 2;
     background-color: #826550;
   }
@@ -104,7 +105,7 @@ body {
     line-height: 2.4rem;
     font-weight: bold;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       display: none;
       text-align: center;
       width: 100%;
@@ -114,7 +115,7 @@ body {
     &--active {
       border-bottom: .3rem solid #826550;
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         display: block;
         border-bottom: none;
       }
@@ -128,7 +129,7 @@ body {
         font-size: 0;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         display: none;
       }
     }
@@ -150,10 +151,19 @@ body {
   @media (max-width: 1200px) {
     flex-wrap: wrap;
   }
+
+  @media (max-width: 767px) {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .advantages {
   background-color: #353535;
+
+  @media (max-width: 767px) {
+    background-color: #fff;
+  }
 
   &__row {
     width: 33.3333%;
@@ -169,16 +179,28 @@ body {
         margin-top: 0;
         flex-direction: column;
         width: 50%;
+
+        @media (max-width: 767px) {
+          width: 100%;
+        }
       }
     }
 
     @media (max-width: 767px) {
       margin-top: 0;
+      flex-wrap: wrap;
+      width: 100%;
     }
   }
 
   &__item {
     padding: 3rem 5.5rem 3rem 4rem;
+
+    @media (max-width: 767px) {
+      display: flex;
+      padding: 2rem;
+      justify-content: space-between;
+    }
 
     &--light-gray {
       background-color: #4e4e4e;
@@ -187,6 +209,10 @@ body {
     &--gray {
       background-color: #404040;
       padding-right: 3rem;
+
+      @media (max-width: 767px) {
+        padding-right: 0;
+      }
     }
 
     &--dark-gray {
@@ -196,9 +222,20 @@ body {
     &-heading {
       font-size: 4rem;
       line-height: 4rem;
+      text-transform: uppercase;
 
       @media (max-width: 1200px) {
         margin-bottom: 1.5rem;
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+      }
+
+      @media (max-width: 767px) {
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-bottom: 0;
       }
     }
 
@@ -206,6 +243,13 @@ body {
       font-size: 7.2rem;
       line-height: 1;
       color: white;
+
+      @media (max-width: 767px) {
+        display: flex;
+        font-size: 4rem;
+        line-height: 4rem;
+        width: 50%;
+      }
     }
 
     &-text {
@@ -213,13 +257,18 @@ body {
       line-height: 2.7rem;
       color: white;
 
+      @media (max-width: 767px) {
+        width: 50%;
+      }
+
       &--black {
         color: black;
         margin-bottom: 3.8rem;
-      }
 
-      &--notice {
-        color: #b2b2b2;
+        @media (max-width: 767px) {
+          margin-bottom: 0;
+          text-align: center;
+        }
       }
 
       &--tablet {
@@ -232,6 +281,14 @@ body {
 
       &--pc {
         @media (max-width: 1200px) {
+          display: none;
+        }
+      }
+
+      &--notice {
+        color: #b2b2b2;
+
+        @media (max-width: 767px) {
           display: none;
         }
       }
@@ -256,6 +313,18 @@ body {
         padding-top: 3rem;
         padding-left: 4rem;
         padding-bottom: 3rem;
+      }
+
+      @media (max-width: 767px) {
+        width: 100%;
+        padding: 3rem 2rem 3rem 2rem;
+
+        &:nth-of-type(2) {
+
+          @media (max-width: 767px) {
+            padding-top: 0;
+          }
+        }
       }
     }
   }
@@ -288,7 +357,7 @@ body {
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
 
     order: 1;
 
